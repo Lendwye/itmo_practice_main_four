@@ -14,7 +14,7 @@ def mse(mean_val, file_path="data.txt"):
             wave_length, value = get_str_data(line)
             sum_val += (value - mean_val) ** 2
             amount += 1
-    res = (sum_val / amount) ** 0.5
+    res = sum_val / amount
     return res
 
 
